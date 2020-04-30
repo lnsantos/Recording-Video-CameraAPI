@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#fff"/>
+            <gradient
+                android:startColor="#9D70ED"
+                android:endColor="#fff" android:angle="180"/>
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/ic_settings_24dp"/>
+</layer-list>

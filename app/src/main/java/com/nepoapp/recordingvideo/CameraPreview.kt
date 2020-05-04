@@ -34,7 +34,7 @@ class CameraPreview(
     }
 
     override fun surfaceDestroyed(holder: SurfaceHolder) {
-
+            mCamera.stopPreview()
     }
 
     override fun surfaceChanged(holder: SurfaceHolder, format: Int, w: Int, h: Int) {

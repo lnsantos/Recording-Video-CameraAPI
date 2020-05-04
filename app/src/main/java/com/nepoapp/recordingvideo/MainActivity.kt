@@ -133,11 +133,11 @@ class MainActivity : AppCompatActivity() {
                 setAudioSource(MediaRecorder.AudioSource.CAMCORDER)
                 setVideoSource(MediaRecorder.VideoSource.CAMERA)
 
-                // setProfile(CamcorderProfile.get(CamcorderProfile.QUALITY_480P))
+                /*setProfile(CamcorderProfile.get(CamcorderProfile.QUALITY_LOW))*/
                 setOutputFile(CameraUtils().getOutputMediaFile(typeCurrent).toString())
 
-                setOutputFormat(MediaRecorder.OutputFormat.MPEG_2_TS)
-                setAudioEncoder(MediaRecorder.AudioEncoder.DEFAULT)
+                setOutputFormat(MediaRecorder.OutputFormat.MPEG_4)
+                setAudioEncoder(MediaRecorder.VideoEncoder.DEFAULT)
                 setVideoEncoder(MediaRecorder.VideoEncoder.H264)
 
                 setPreviewDisplay(mPreview?.holder?.surface)

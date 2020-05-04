@@ -15,7 +15,7 @@ class CameraUtils{
 
       fun getOutputMediaFile(type: Int) : File?{
          val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
-         val folderName = "solvianteste"
+         val folderName = "TESTENEPO"
          val mediaStorage = File(path,folderName)
 
          if (!mediaStorage.exists()){
@@ -28,6 +28,6 @@ class CameraUtils{
          val pathFile = mediaStorage.path + File.separator + time
          return if (type == 0){
              File("$pathFile.jpg")
-         } else File("$pathFile.mp4")
+         } else File("$pathFile.avi")
      }
 }
